@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="CourseCell" customModule="OnlineBankApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Назва валюти" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP7-zs-ALu">
+                        <rect key="frame" x="20" y="21" width="194" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="194" id="WiZ-Yy-AC6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCN-wv-bQP">
+                        <rect key="frame" x="279" y="21" width="80" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="4SF-eM-Zod"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eAl-hz-YDT">
+                        <rect key="frame" x="251" y="21" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="900" constant="22" id="F59-Ho-ygY"/>
+                            <constraint firstAttribute="width" constant="20" id="Uqf-Iv-2nY"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6J8-6E-RbS">
+                        <rect key="frame" x="251" y="51" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="CRb-ct-dFs"/>
+                            <constraint firstAttribute="height" priority="900" constant="22" id="gS3-JS-7c2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eAl-hz-YDT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="4Um-UP-DRX"/>
+                    <constraint firstAttribute="trailing" secondItem="hCN-wv-bQP" secondAttribute="trailing" constant="20" id="G3o-Zb-Naw"/>
+                    <constraint firstAttribute="bottom" secondItem="6J8-6E-RbS" secondAttribute="bottom" constant="13.5" id="GhT-UQ-ch8"/>
+                    <constraint firstItem="RP7-zs-ALu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Nsp-hx-vkc"/>
+                    <constraint firstItem="hCN-wv-bQP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="P1A-pE-1cp"/>
+                    <constraint firstItem="6J8-6E-RbS" firstAttribute="top" secondItem="eAl-hz-YDT" secondAttribute="bottom" constant="8" id="XBL-LR-fwh"/>
+                    <constraint firstItem="hCN-wv-bQP" firstAttribute="leading" secondItem="6J8-6E-RbS" secondAttribute="trailing" constant="8" id="hhO-E2-meW"/>
+                    <constraint firstAttribute="bottom" secondItem="RP7-zs-ALu" secondAttribute="bottom" constant="20.5" id="hqh-oD-6Ea"/>
+                    <constraint firstItem="hCN-wv-bQP" firstAttribute="leading" secondItem="eAl-hz-YDT" secondAttribute="trailing" constant="8" id="ppO-e1-W7V"/>
+                    <constraint firstItem="RP7-zs-ALu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="w7A-yO-P00"/>
+                    <constraint firstAttribute="bottom" secondItem="hCN-wv-bQP" secondAttribute="bottom" constant="20.5" id="zqU-yW-P8C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currencyLabel" destination="hCN-wv-bQP" id="OCT-4g-qGo"/>
+                <outlet property="nameCurrency" destination="RP7-zs-ALu" id="24I-UH-twx"/>
+                <outletCollection property="indicatorUIImage" destination="eAl-hz-YDT" collectionClass="NSMutableArray" id="CCH-vt-tMu"/>
+                <outletCollection property="indicatorUIImage" destination="6J8-6E-RbS" collectionClass="NSMutableArray" id="0e3-Q4-lfq"/>
+            </connections>
+            <point key="canvasLocation" x="180.43478260869566" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+</document>

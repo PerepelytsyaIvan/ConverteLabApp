@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CVm-tj-Qyi">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Converter Lab-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ConverterLabViewController" customModule="OnlineBankApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-yv-15S">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Cdu-vt-CPy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ldk-yv-15S" secondAttribute="bottom" id="Pc8-EU-1dI"/>
+                            <constraint firstAttribute="top" secondItem="ldk-yv-15S" secondAttribute="top" constant="-88" id="Spf-WX-3L1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ldk-yv-15S" secondAttribute="trailing" id="itF-R8-YOF"/>
+                            <constraint firstItem="ldk-yv-15S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jy8-KT-eSH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Converter Lab" id="Arg-rx-rLu"/>
+                    <connections>
+                        <outlet property="tableView" destination="ldk-yv-15S" id="Hnh-OP-Plh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095.6521739130435" y="715.84821428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Lv-BA-KDc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CVm-tj-Qyi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jqe-iS-rnE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BwD-A0-M0l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meL-cX-CB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357.97101449275362" y="715.84821428571422"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="h8h-8r-ddy">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="tF8-PQ-9sq" customClass="MapViewController" customModule="OnlineBankApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Svr-wv-Dcf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nz8-sc-r6m">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nz8-sc-r6m" secondAttribute="trailing" id="ch3-jq-VuS"/>
+                            <constraint firstItem="Nz8-sc-r6m" firstAttribute="top" secondItem="WvW-EF-qBi" secondAttribute="top" id="fNV-3a-Y4h"/>
+                            <constraint firstItem="WvW-EF-qBi" firstAttribute="bottom" secondItem="Nz8-sc-r6m" secondAttribute="bottom" id="juH-OA-bdQ"/>
+                            <constraint firstItem="Nz8-sc-r6m" firstAttribute="leading" secondItem="WvW-EF-qBi" secondAttribute="leading" id="v6x-my-Url"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WvW-EF-qBi"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Nz8-sc-r6m" id="0hU-hC-d16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20y-Uq-HAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818.840579710145" y="715.84821428571422"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="N6u-Ox-jpa">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="yR6-go-dAf" customClass="DetailViewController" customModule="OnlineBankApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWK-av-y7l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oa3-FM-U85">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yR6-go-dAf" id="SF3-dn-etN"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP8-uP-3Zv">
+                                <rect key="frame" x="294" y="688" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="pD2-wb-GH9"/>
+                                    <constraint firstAttribute="height" constant="70" id="uFF-wH-flX"/>
+                                </constraints>
+                                <state key="normal" image="ic_phone_floating"/>
+                                <connections>
+                                    <action selector="phoneButton:" destination="yR6-go-dAf" eventType="touchUpInside" id="lRV-fF-6Sx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fym-eH-w7A">
+                                <rect key="frame" x="294" y="596" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="BdN-oZ-IgG"/>
+                                    <constraint firstAttribute="height" constant="70" id="O1b-sD-nbz"/>
+                                </constraints>
+                                <state key="normal" image="ic_link_floating"/>
+                                <connections>
+                                    <action selector="linkButton:" destination="yR6-go-dAf" eventType="touchUpInside" id="9MP-1H-GCo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGX-Lu-olo">
+                                <rect key="frame" x="288" y="780" width="82" height="82"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="J7f-Uq-2lm"/>
+                                    <constraint firstAttribute="width" constant="82" id="s2T-Pz-Ifd"/>
+                                </constraints>
+                                <state key="normal" image="ic_hamburger"/>
+                                <connections>
+                                    <action selector="openButton:" destination="yR6-go-dAf" eventType="touchUpInside" id="2Jh-3e-Ntx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgP-Am-Qwx">
+                                <rect key="frame" x="294" y="504" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="PUS-3C-edP"/>
+                                    <constraint firstAttribute="width" constant="70" id="TGn-4x-A0M"/>
+                                </constraints>
+                                <state key="normal" image="ic_mark_floating"/>
+                                <connections>
+                                    <action selector="markButton:" destination="yR6-go-dAf" eventType="touchUpInside" id="JC2-mo-Std"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RGX-Lu-olo" firstAttribute="top" secondItem="gP8-uP-3Zv" secondAttribute="bottom" constant="22" id="5Ux-p0-bR8"/>
+                            <constraint firstItem="8wN-Kb-5W5" firstAttribute="trailing" secondItem="Oa3-FM-U85" secondAttribute="trailing" id="6x6-lJ-3WI"/>
+                            <constraint firstItem="gP8-uP-3Zv" firstAttribute="top" secondItem="fym-eH-w7A" secondAttribute="bottom" constant="22" id="8dK-75-yzu"/>
+                            <constraint firstItem="Oa3-FM-U85" firstAttribute="top" secondItem="8wN-Kb-5W5" secondAttribute="top" id="Bgg-Q6-8A5"/>
+                            <constraint firstItem="8wN-Kb-5W5" firstAttribute="trailing" secondItem="RGX-Lu-olo" secondAttribute="trailing" constant="44" id="Pfc-bH-7bG"/>
+                            <constraint firstItem="RGX-Lu-olo" firstAttribute="bottom" secondItem="8wN-Kb-5W5" secondAttribute="bottom" id="Yiv-II-BTf"/>
+                            <constraint firstItem="Oa3-FM-U85" firstAttribute="leading" secondItem="8wN-Kb-5W5" secondAttribute="leading" id="a2b-2N-IkE"/>
+                            <constraint firstItem="8wN-Kb-5W5" firstAttribute="trailing" secondItem="gP8-uP-3Zv" secondAttribute="trailing" constant="50" id="aNJ-ji-ABY"/>
+                            <constraint firstItem="fym-eH-w7A" firstAttribute="top" secondItem="TgP-Am-Qwx" secondAttribute="bottom" constant="22" id="fBC-Uv-NgL"/>
+                            <constraint firstAttribute="bottom" secondItem="Oa3-FM-U85" secondAttribute="bottom" id="l0U-d2-met"/>
+                            <constraint firstItem="8wN-Kb-5W5" firstAttribute="trailing" secondItem="TgP-Am-Qwx" secondAttribute="trailing" constant="50" id="r4z-WI-bhF"/>
+                            <constraint firstItem="8wN-Kb-5W5" firstAttribute="trailing" secondItem="fym-eH-w7A" secondAttribute="trailing" constant="50" id="u1r-ff-wLS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8wN-Kb-5W5"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Oa3-FM-U85" id="BCb-qb-SIA"/>
+                        <outletCollection property="arrayButton" destination="gP8-uP-3Zv" collectionClass="NSMutableArray" id="zK8-EW-IXe"/>
+                        <outletCollection property="arrayButton" destination="fym-eH-w7A" collectionClass="NSMutableArray" id="bv3-gV-OaT"/>
+                        <outletCollection property="arrayButton" destination="TgP-Am-Qwx" collectionClass="NSMutableArray" id="TCI-yh-Ndg"/>
+                        <outletCollection property="arrayButton" destination="RGX-Lu-olo" collectionClass="NSMutableArray" id="A8X-Pw-kZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Us-IL-y7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2579.7101449275365" y="715.84821428571422"/>
+        </scene>
+        <!--Screen Dialog Pop View Controller-->
+        <scene sceneID="w3o-TF-xhw">
+            <objects>
+                <viewController storyboardIdentifier="ScreenDialogPopViewController" id="gbl-a9-fao" customClass="ScreenDialogPopViewController" customModule="OnlineBankApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IjC-MH-gbc">
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C8h-TE-biR">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="433"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gbl-a9-fao" id="f3W-cd-syZ"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIe-is-d76">
+                                <rect key="frame" x="0.0" y="430" width="370" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PBl-04-3Tn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="SHARE"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C8h-TE-biR" firstAttribute="trailing" secondItem="pde-5C-V6l" secondAttribute="trailing" id="8Dl-vb-R63"/>
+                            <constraint firstItem="C8h-TE-biR" firstAttribute="top" secondItem="IjC-MH-gbc" secondAttribute="top" id="CVg-ka-QI5"/>
+                            <constraint firstItem="bIe-is-d76" firstAttribute="leading" secondItem="pde-5C-V6l" secondAttribute="leading" id="Qxh-Ba-6vO"/>
+                            <constraint firstItem="C8h-TE-biR" firstAttribute="leading" secondItem="pde-5C-V6l" secondAttribute="leading" id="UFH-lX-nGc"/>
+                            <constraint firstItem="pde-5C-V6l" firstAttribute="bottom" secondItem="C8h-TE-biR" secondAttribute="bottom" constant="13" id="oUg-oH-0sF"/>
+                            <constraint firstItem="bIe-is-d76" firstAttribute="trailing" secondItem="pde-5C-V6l" secondAttribute="trailing" id="uIK-sf-gas"/>
+                            <constraint firstAttribute="bottom" secondItem="bIe-is-d76" secondAttribute="bottom" id="vFp-fy-Zyo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pde-5C-V6l"/>
+                    </view>
+                    <size key="freeformSize" width="370" height="480"/>
+                    <connections>
+                        <outlet property="shareButton" destination="bIe-is-d76" id="zuC-Pt-h5d"/>
+                        <outlet property="tableView" destination="C8h-TE-biR" id="OVW-AC-kcM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uaL-r4-CZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3197" y="716"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_hamburger" width="28" height="20"/>
+        <image name="ic_link_floating" width="24" height="12"/>
+        <image name="ic_mark_floating" width="14" height="20"/>
+        <image name="ic_phone_floating" width="18" height="18"/>
+    </resources>
+</document>

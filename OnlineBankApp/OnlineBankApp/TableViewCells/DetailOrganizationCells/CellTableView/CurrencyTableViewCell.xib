@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="339" id="KGk-i7-Jjw" customClass="CurrencyTableViewCell" customModule="OnlineBankApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="339"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="338.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtV-yB-C1N">
+                        <rect key="frame" x="5" y="7" width="438" height="321"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w0J-Qx-06f">
+                                <rect key="frame" x="20" y="20" width="418" height="281"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="w0J-Qx-06f" secondAttribute="bottom" constant="20" id="67z-sS-HEL"/>
+                            <constraint firstAttribute="height" constant="321" id="Djj-z1-oBS"/>
+                            <constraint firstAttribute="width" priority="700" constant="438" id="IcK-F0-tP6"/>
+                            <constraint firstItem="w0J-Qx-06f" firstAttribute="leading" secondItem="dtV-yB-C1N" secondAttribute="leading" constant="20" symbolic="YES" id="NVj-RS-kGb"/>
+                            <constraint firstAttribute="trailing" secondItem="w0J-Qx-06f" secondAttribute="trailing" id="Sbm-Il-35O"/>
+                            <constraint firstItem="w0J-Qx-06f" firstAttribute="top" secondItem="dtV-yB-C1N" secondAttribute="top" constant="20" id="iw4-0E-MRs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dtV-yB-C1N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="8vw-bw-A4M"/>
+                    <constraint firstAttribute="trailing" secondItem="dtV-yB-C1N" secondAttribute="trailing" constant="5" id="LF2-N6-ut7"/>
+                    <constraint firstAttribute="bottom" secondItem="dtV-yB-C1N" secondAttribute="bottom" constant="7" id="Nyt-0z-MIV"/>
+                    <constraint firstItem="dtV-yB-C1N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="bFW-7c-IAo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tableView" destination="w0J-Qx-06f" id="UPf-nO-G1K"/>
+            </connections>
+            <point key="canvasLocation" x="230.43478260869566" y="215.29017857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
